@@ -1,12 +1,12 @@
-const imagemin = require('imagemin');
-const imageminJpegtran = require('imagemin-jpegtran');
-const imageminOptipng = require('imagemin-optipng');
+const imagemin = require('imagemin-keep-folder');
+const imageminGifsicle = require('imagemin-gifsicle');
+const imageminPngquant = require('imagemin-pngquant');
+const imageminMozjpeg = require('imagemin-mozjpeg');
 
 (async () => {
-	let files = await imagemin(['dist/static/*.{jpg,png}'], {
-		destination: 'dist/static',
-		use: [imageminJpegtran(), imageminOptipng()]
-	});
+    await imagemin(['dist/static/*.{jpg,png,gif}'], {
+        use: [imageminMozjpeg(), imageminPngquant(), imageminGifsicle()]
+    });
 
-	console.log(files);
+    console.log(`image optimize complete`);
 })();
