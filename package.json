@@ -1,42 +1,42 @@
 {
-	"name": "parcel-setup",
-	"version": "1.0.0",
-	"main": "index.js",
-	"scripts": {
-		"start": "rimraf dist && parcel public/index.html --open",
-		"build": "rimraf dist && parcel build public/index.html --public-url ./ --out-dir dist && node postbuild.js && node imagemin.js"
-	},
-	"license": "MIT",
-	"dependencies": {
-		"@babel/plugin-proposal-class-properties": "^7.4.4",
-		"@babel/plugin-proposal-export-namespace-from": "^7.2.0",
-		"@babel/plugin-proposal-numeric-separator": "^7.2.0",
-		"@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
-		"@babel/plugin-transform-modules-commonjs": "^7.4.4",
-		"@babel/plugin-transform-runtime": "^7.4.4",
-		"@babel/preset-env": "^7.7.7",
-		"@babel/preset-flow": "^7.0.0",
-		"@babel/preset-typescript": "7.7.4",
-		"@babel/register": "^7.4.4",
-		"@babel/runtime": "^7.4.5",
-		"@babel/runtime-corejs3": "^7.4.5",
-		"autoprefixer": "^9.7.3",
-		"css": "^2.2.4",
-		"imagemin": "^7.0.1",
-		"imagemin-keep-folder": "5.3.2",
-		"imagemin-mozjpeg": "^8.0.0",
-		"imagemin-optipng": "^7.1.0",
-		"imagemin-webp": "^5.1.0",
-		"lodash": "^4.17.15",
-		"lodash.escaperegexp": "^4.1.2",
-		"node-sass": "^4.13.0",
-		"postcss-modules": "^1.4.1",
-		"replace-in-file": "^5.0.2",
-		"sass": "^1.24.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.7.7",
-		"typescript": "^3.7.4"
-	}
+    "name": "parcel-setup",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "rimraf dist && parcel public/index.html --open",
+        "build": "rimraf dist && parcel build public/index.html --public-url ./ --out-dir dist && node postbuild.js && node imagemin.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+        "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+        "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/preset-env": "^7.7.7",
+        "@babel/preset-flow": "^7.0.0",
+        "@babel/preset-typescript": "7.7.4",
+        "@babel/register": "^7.4.4",
+        "@babel/runtime": "^7.4.5",
+        "@babel/runtime-corejs3": "^7.4.5",
+        "autoprefixer": "^9.7.3",
+        "css": "^2.2.4",
+        "imagemin": "^7.0.1",
+        "imagemin-keep-folder": "5.3.2",
+        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-optipng": "^7.1.0",
+        "imagemin-webp": "^5.1.0",
+        "lodash": "^4.17.15",
+        "lodash.escaperegexp": "^4.1.2",
+        "node-sass": "^4.13.0",
+        "postcss-modules": "^1.4.1",
+        "replace-in-file": "^5.0.2",
+        "sass": "^1.24.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "typescript": "^3.7.4"
+    }
 }
