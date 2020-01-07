@@ -1,5 +1,5 @@
 const imagemin = require('imagemin-keep-folder');
-const imageminWebp = require('imagemin-webp');
+// const imageminWebp = require('imagemin-webp');
 const imageminOptipng = require('imagemin-optipng');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 
