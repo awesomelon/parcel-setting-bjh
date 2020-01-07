@@ -4,7 +4,7 @@
 
 `rimraf` 추가
 
----
+===
 
 #### image들을 압축하는 코드 추가
 
@@ -27,7 +27,7 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 })();
 ```
 
----
+===
 
 #### build시 파일을 폴더별로 분리하는 코드 추가
 
@@ -169,7 +169,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
 });
 ```
 
----
+===
 
 #### USAGE
 
