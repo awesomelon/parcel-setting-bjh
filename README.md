@@ -1,9 +1,12 @@
 # parcel 기초 세팅 만들기
 
-build할 때 이전에 빌드된 폴더를 삭제하기 위한
+#### build할 때 이전에 빌드된 폴더를 삭제하기 위한
+
 `rimraf` 추가
 
-image들을 압축하는 코드 추가
+---
+
+#### image들을 압축하는 코드 추가
 
 ```javascript
 const imagemin = require('imagemin-keep-folder');
@@ -24,7 +27,9 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 })();
 ```
 
-build시 파일을 폴더별로 분리하는 코드 추가
+---
+
+#### build시 파일을 폴더별로 분리하는 코드 추가
 
 ```javascript
 const fs = require('fs');
@@ -164,7 +169,9 @@ fs.readdir(`./${baseDir}`, (err, files) => {
 });
 ```
 
-package.json: "scripts"
+---
+
+#### USAGE
 
 ```json
 {
