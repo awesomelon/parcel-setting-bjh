@@ -1,6 +1,9 @@
 # parcel 기초 세팅 만들기
 
-image 압축과
+build할 때 이전에 빌드된 폴더를 삭제하기 위한
+`rimraf` 추가
+
+image들을 압축하는 코드 추가
 
 ```javascript
 const imagemin = require('imagemin-keep-folder');
@@ -21,7 +24,7 @@ const imageminMozjpeg = require('imagemin-mozjpeg');
 })();
 ```
 
-build시 파일을 폴더별로 분리하는
+build시 파일을 폴더별로 분리하는 코드 추가
 
 ```javascript
 const fs = require('fs');
@@ -161,4 +164,11 @@ fs.readdir(`./${baseDir}`, (err, files) => {
 });
 ```
 
-코드 추가
+package.json: "scripts"
+
+```json
+{
+    "start": "rimraf dist && parcel public/index.html --open",
+    "build": "rimraf dist && parcel build public/index.html --public-url ./ --out-dir dist && node postbuild.js && node imagemin.js"
+}
+```
